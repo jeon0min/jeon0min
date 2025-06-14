@@ -1,0 +1,136 @@
+body {
+  background: linear-gradient(120deg, #f0f4f8 0%, #d9e7fa 100%);
+  font-family: 'Segoe UI', '맑은 고딕', Arial, sans-serif;
+  margin: 0;
+  color: #222;
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 90, 130, 0.15);
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+header {
+  display: flex;
+  align-items: center;
+  background: #3a7bd5;
+  color: #fff;
+  padding: 32px 24px 24px 24px;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  margin-right: 32px;
+}
+.profile-info h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.2em;
+}
+.job-title {
+  font-size: 1.1em;
+  opacity: 0.85;
+}
+nav {
+  background: #f7fafd;
+  border-bottom: 1px solid #e3eaf2;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin: 0 18px;
+}
+nav a {
+  text-decoration: none;
+  color: #3a7bd5;
+  font-weight: 600;
+  padding: 16px 0;
+  display: block;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #174e91;
+}
+main {
+  padding: 32px 24px 0 24px;
+}
+section {
+  margin-bottom: 36px;
+}
+h2 {
+  color: #3a7bd5;
+  margin-bottom: 12px;
+}
+.skills-bar .skill {
+  margin-bottom: 16px;
+}
+.skills-bar .bar {
+  background: #e3eaf2;
+  border-radius: 8px;
+  height: 18px;
+  width: 100%;
+  margin-top: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.skills-bar .progress {
+  background: linear-gradient(90deg, #3a7bd5 60%, #00d2ff 100%);
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  transition: width 1s;
+}
+.percent-label {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 0.95em;
+  color: #174e91;
+  font-weight: bold;
+  z-index: 1;
+  pointer-events: none;
+}
+footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.95em;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #e3eaf2;
+}
+.awards-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  background: #f9fbfd;
+  font-size: 1em;
+}
+.awards-table th, .awards-table td {
+  border: 1px solid #d1e0ee;
+  padding: 8px 6px;
+  text-align: center;
+}
+.awards-table th {
+  background: #e3eaf2;
+  color: #174e91;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .container { margin: 0; border-radius: 0; }
+  header { flex-direction: column; text-align: center; }
+  .profile-img { margin: 0 0 16px 0; }
+}
